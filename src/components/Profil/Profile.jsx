@@ -1,34 +1,38 @@
+import css from './Profile.module.css'
+
+
 export const Profile = ({ image,
   name,
   tag,
   location,
   stats }) => {
   return (
-    <div>
-  <div>
-    <img
-      src={image}
-      alt="User avatar"
-    />
-    <p>{name}</p>
-    <p>@{tag}</p>
-    <p>{location}</p>
-  </div>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img
+          src={image}
+          alt="User avatar"
+          className={css.avatar}
+        />
+        <p className={css.name}>{name}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
+      </div>
 
-  <ul>
-    <li>
-      <span>Followers</span>
-      <span>{stats.followers}</span>
-    </li>
-    <li>
-      <span>Views</span>
-      <span>{stats.views}</span>
-    </li>
-    <li>
-      <span>Likes</span>
-      <span>{stats.likes}</span>
-    </li>
-  </ul>
-</div>
+      <ul className={css.list}>
+        <li className={css.item}>
+          <span className={css.label}>Followers</span>
+          <span className={css.amount}>{stats.followers}</span>
+        </li>
+        <li className={css.item}>
+          <span className={css.label}>Views</span>
+          <span className={css.amount}>{stats.views}</span>
+        </li>
+        <li className={css.item}>
+          <span className={css.label}>Likes</span>
+          <span className={css.amount}>{stats.likes}</span>
+        </li>
+      </ul>
+    </div>
   )
 }
