@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import css from './Profile.module.css'
 
 
@@ -35,4 +36,12 @@ export const Profile = ({ image,
       </ul>
     </div>
   )
+}
+
+Profile.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number.isRequired)
 }

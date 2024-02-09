@@ -1,0 +1,21 @@
+.table {
+  width: 100%;
+}
+.thead {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+.title {
+  font-size: 18px;
+}
+.string {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.string:nth-child(even) {
+  background-color: #d3d3d3;
+}
+.type {
+  text-transform: capitalize;
+}

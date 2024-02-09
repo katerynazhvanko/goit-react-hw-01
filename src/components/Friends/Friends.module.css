@@ -27,9 +27,9 @@
 .status {
   font-size: 13px;
 }
-.status.isOnline {
+.isOnline {
   color: #008001;
 }
-.status.isOffline {
+.isOffline {
   color: #ff0101;
 }

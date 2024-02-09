@@ -1,5 +1,3 @@
-
-
 import userData from './data/userData.json'
 import { Profile } from './components/Profil/Profile'
 
