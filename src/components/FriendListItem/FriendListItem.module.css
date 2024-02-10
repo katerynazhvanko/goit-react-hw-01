@@ -1,0 +1,28 @@
+.item {
+  margin-right: 10px;
+  width: 100%;
+}
+.item:last-child {
+  margin-right: 0px;
+}
+.box {
+  padding: 15px;
+  border: 2px solid #000000;
+  border-radius: 7px;
+}
+.avatar {
+  margin-bottom: 10px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.status {
+  font-size: 13px;
+}
+.isOnline {
+  color: #008001;
+}
+.isOffline {
+  color: #ff0101;
+}
