@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 import css from "./FriendListItem.module.css";
 
-export const FriendListItem = ({ friends: { id, avatar, name, isOnline } }) => {
+export const FriendListItem = ({ friend: { id, avatar, name, isOnline } }) => {
   return (
     <li key={id} id={id} className={css.item}>
       <div className={css.box}>
